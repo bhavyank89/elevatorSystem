@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+}
+
+hr {
+    width: 750px;
+    margin: 0 auto;
+}
+
+article {
+    width: 750px;
+    height: 550px;
+    margin: 15px auto;
+    padding: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(27, 53, 157);
+}
+
+.liftSection {
+    width: 170px;
+    height: 500px;
+    padding: 10px 25px 10px 25px;
+    background-color: #FFECD6;
+}
+
+.liftButtons {
+    width: 170px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.maintenance {
+    width: 710px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lift {
+    width: 120px;
+    height: 100px;
+    color: darkblue;
+    font-size: 20px;
+    background-color: coral;
+    transition: 1s ease;
+}
+
+.buttons {
+    width: 170px;
+    height: 70px;
+    padding: 20px 5px 20px 5px;
+}
+
+.maintainDiv {
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    color: bisque;
+}
+
+.upButton,
+.dnButton,
+.text {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: none;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+label {
+    width: 40px;
+    height: 22px;
+    padding: 2px;
+    margin-left: 60px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: inset 6px 10px 36px -2px rgba(98, 98, 98, 0.75);
+    background-color: #B6BBC4;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.toggleCircle {
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.5s;
+    position: absolute;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: chartreuse;
+}
+
+input:checked+label .toggleCircle {
+    transform: translateX(16px);
+}
